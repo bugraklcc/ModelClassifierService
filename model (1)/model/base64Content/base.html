@@ -1,0 +1,10 @@
+<script>function decodeBase64Image(base64Content) {
+  const img = new Image();
+  img.src = "data:image/png;base64," + base64Content;
+  return img;
+}
+
+const imageContainer = document.getElementById("image-container");
+const content = "<content>"; // Base64 kodlanmış içerik burada olmalı
+const decodedImage = decodeBase64Image(content);
+imageContainer.appendChild(decodedImage);</script>
